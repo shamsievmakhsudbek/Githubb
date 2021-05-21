@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body1">
+    <h1 id="result" style="color: #fff;">Result</h1>
+    <button onclick="myFunction()">
+        Click me
+    </button>
+
+    <button onclick="darkMode()">Dark Mode</button>
+
+    <button onclick="lightMode()">Light Mode</button>
+
+    <script>
+        function myFunction() {
+            var num1 = 50,
+                num2 = 40;
+
+            var result = num1 + num2;
+
+            document.getElementById("result").innerHTML = result;
+        }
+
+        function darkMode() {
+            document.getElementById("body1").style.backgroundColor = '#000';
+        }
+
+        function lightMode() {
+            document.getElementById("body1").style.backgroundColor = '#555';
+        }
+    </script>
+
+</body>
+</html>
